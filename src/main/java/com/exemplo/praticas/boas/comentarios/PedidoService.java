@@ -1,4 +1,4 @@
-package com.exemplo.praticas.boas.comentario;
+package com.exemplo.praticas.boas.comentarios;
 
 /*
  * Javadoc foi removido pois só é útil em APIs e quando for utilizado deve ser bem elaborado.

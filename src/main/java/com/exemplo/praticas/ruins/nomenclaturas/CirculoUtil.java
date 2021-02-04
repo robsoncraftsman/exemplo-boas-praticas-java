@@ -1,4 +1,4 @@
-package com.exemplo.praticas.ruins.nomenclatura;
+package com.exemplo.praticas.ruins.nomenclaturas;
 
 public class CirculoUtil {
 

@@ -1,4 +1,4 @@
-package com.exemplo.praticas.ruins.erro;
+package com.exemplo.praticas.ruins.erros;
 
 public class PedidoService {
 

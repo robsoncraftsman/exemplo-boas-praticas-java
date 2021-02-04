@@ -1,4 +1,4 @@
-package com.exemplo.praticas.boas.erro;
+package com.exemplo.praticas.boas.erros;
 
 import java.io.File;
 import java.io.FileInputStream;

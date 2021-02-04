@@ -1,4 +1,4 @@
-package com.exemplo.praticas.boas.nomenclatura;
+package com.exemplo.praticas.ruins.nomenclaturas;
 
 
 public interface ClienteRepository {

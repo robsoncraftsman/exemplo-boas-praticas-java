@@ -1,4 +1,4 @@
-package com.exemplo.praticas.ruins.comentario;
+package com.exemplo.praticas.ruins.comentarios;
 
 /*
  * Javadoc agrega pouco na descrição do método

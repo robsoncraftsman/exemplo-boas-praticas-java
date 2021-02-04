@@ -1,4 +1,4 @@
-package com.exemplo.praticas.boas.nomenclatura;
+package com.exemplo.praticas.boas.nomenclaturas;
 
 public class ClienteService {
 
