@@ -2,6 +2,10 @@ package com.exemplo.praticas.boas.nomenclatura;
 
 public class CirculoUtil {
 
+	private CirculoUtil() {
+
+	}
+
 	/*
 	 * Foi criada uma constante para o PI
 	 */
@@ -10,7 +14,7 @@ public class CirculoUtil {
 	/*
 	 * Nome do método e do parâmetro são claros
 	 */
-	public double calcularAreaCirculo(final double raio) {
+	public static double calcularAreaCirculo(final double raio) {
 		return CirculoUtil.PI * raio * raio;
 	}
 
