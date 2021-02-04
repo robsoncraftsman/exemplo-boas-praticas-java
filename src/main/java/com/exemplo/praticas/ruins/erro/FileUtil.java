@@ -1,20 +1,14 @@
-package com.exemplo.praticas.ruins.codificacao;
+package com.exemplo.praticas.ruins.erro;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
-public class TratamentoErros {
+public class FileUtil {
 
-	/*
-	 * Método dispara uma exceção checked
-	 * Método dispara uma exceção genérica
-	 */
-	public void validarPreco(final Double valor) throws Exception {
-		if (valor < 0) {
-			throw new Exception("Valor deve ser maior que zero");
-		}
+	private FileUtil() {
+
 	}
 
 	/*
@@ -35,4 +29,5 @@ public class TratamentoErros {
 			return new byte[0];
 		}
 	}
+
 }
