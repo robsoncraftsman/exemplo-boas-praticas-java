@@ -1,6 +1,6 @@
 package com.exemplo.praticas.ruins.codificacao;
 
-public class NomesSignificativos {
+public class Nomenclaturas {
 
 	/*
 	 * Nome do método deve representar o objetivo do método.

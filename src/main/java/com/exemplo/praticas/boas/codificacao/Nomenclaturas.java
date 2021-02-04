@@ -1,6 +1,6 @@
 package com.exemplo.praticas.boas.codificacao;
 
-public class NomesSignificativos {
+public class Nomenclaturas {
 
 	/*
 	 * Foi criada uma constante para o PI
@@ -11,7 +11,7 @@ public class NomesSignificativos {
 	 * Nome do método e do parâmetro são claros
 	 */
 	public double calcularAreaCirculo(final double raio) {
-		return NomesSignificativos.PI * raio * raio;
+		return Nomenclaturas.PI * raio * raio;
 	}
 
 	/*
