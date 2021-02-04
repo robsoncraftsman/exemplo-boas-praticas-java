@@ -1,11 +1,9 @@
-package com.exemplo.praticas.ruins.codificacao;
+package com.exemplo.praticas.ruins.comentario;
 
 /*
- * Javadoc que não agrega muito valor.
- * Comentário desatualizados em relação as regras a serem aplicadas.
- * Comentários óbvios e que poderiam ser removidos. 
+ * Javadoc agrega pouco na descrição do método
  */
-public class Comentarios {
+public class PedidoService {
 
 	/**
 	 * Calcula o desconto.
@@ -42,4 +40,5 @@ public class Comentarios {
 		//Retorna o valor do produto com o desconto
 		return valor * (1 + (desconto / 100));
 	}
+
 }

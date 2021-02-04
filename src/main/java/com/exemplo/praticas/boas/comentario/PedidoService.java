@@ -1,10 +1,10 @@
-package com.exemplo.praticas.boas.codificacao;
+package com.exemplo.praticas.boas.comentario;
 
 /*
  * Javadoc foi removido pois só é útil em APIs e quando for utilizado deve ser bem elaborado.
  * Comentários foram removidos e foram utilizados métodos com nomes significativos.
  */
-public class Comentarios {
+public class PedidoService {
 
 	private Double calculaDescontoPorQuantidade(final Integer quantidade) {
 		if (quantidade >= 100) {
