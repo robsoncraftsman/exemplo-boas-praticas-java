@@ -1,8 +1,5 @@
 package com.exemplo.praticas.boas.coesao;
 
-/*
- * Componente para salvar dados de clientes.
- */
 public class ClienteRepository {
 
 	public void salvar(final Cliente cliente) {

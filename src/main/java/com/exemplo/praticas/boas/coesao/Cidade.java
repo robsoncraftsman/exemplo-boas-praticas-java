@@ -1,8 +1,5 @@
 package com.exemplo.praticas.boas.coesao;
 
-/*
- * Objeto de domínio que representa a entidade Cidade.
- */
 public class Cidade {
 
 	private String nome;

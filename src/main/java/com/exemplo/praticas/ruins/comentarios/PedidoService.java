@@ -34,7 +34,7 @@ public class PedidoService {
 
 		//Se tiver desconto por estoque, verifica a quantidade e calcula o desconto
 		if (descontoPorEstoque && (estoque > 1000)) {
-			desconto = +5D;
+			desconto = desconto + 5D;
 		}
 
 		//Retorna o valor do produto com o desconto

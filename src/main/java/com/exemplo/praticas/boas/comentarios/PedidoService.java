@@ -20,7 +20,7 @@ public class PedidoService {
 
 	private Double calculaDescontoPorEstoque(final Integer estoque) {
 		if (estoque > 1000) {
-			return +5D;
+			return 5D;
 		} else {
 			return 0D;
 		}
@@ -30,9 +30,14 @@ public class PedidoService {
 		return valor * (1 + (desconto / 100));
 	}
 
-	public Double calcularDesconto(final Double valor, final Integer quantidade, final Integer estoque) {
-		Double desconto = calculaDescontoPorQuantidade(quantidade);
-		desconto = desconto + calculaDescontoPorEstoque(estoque);
+	public Double calcularDesconto(final Double valor, final Integer quantidade, final Integer estoque, final boolean descontoPorQuantidade, final boolean descontoPorEstoque) {
+		Double desconto = 0D;
+		if (descontoPorQuantidade) {
+			desconto = desconto + calculaDescontoPorQuantidade(quantidade);
+		}
+		if (descontoPorEstoque) {
+			desconto = desconto + calculaDescontoPorEstoque(estoque);
+		}
 
 		return calculaDescontoSobreValor(valor, desconto);
 	}

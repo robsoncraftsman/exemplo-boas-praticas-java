@@ -1,14 +1,12 @@
 package com.exemplo.praticas.boas.coesao;
 
-/*
- * Objeto de domínio que representa a entidade Cliente.
- */
 public class Cliente {
 
 	private Long id;
 	private String nome;
 	private String email;
 	private Endereco endereco;
+	private Integer idade;
 
 	public Long getId() {
 		return this.id;
@@ -40,6 +38,14 @@ public class Cliente {
 
 	public void setEndereco(final Endereco endereco) {
 		this.endereco = endereco;
+	}
+
+	public Integer getIdade() {
+		return this.idade;
+	}
+
+	public void setIdade(final Integer idade) {
+		this.idade = idade;
 	}
 
 }

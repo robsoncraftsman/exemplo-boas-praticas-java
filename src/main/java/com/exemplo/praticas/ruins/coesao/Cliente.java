@@ -1,8 +1,5 @@
 package com.exemplo.praticas.ruins.coesao;
 
-/*
- * Objeto de domínio que representa a entidade Cliente.
- */
 public class Cliente {
 
 	private Long id;
@@ -12,6 +9,7 @@ public class Cliente {
 	private String cep;
 	private String numero;
 	private String cidade;
+	private Integer idade;
 
 	public Long getId() {
 		return this.id;
@@ -67,6 +65,14 @@ public class Cliente {
 
 	public void setCidade(final String cidade) {
 		this.cidade = cidade;
+	}
+
+	public Integer getIdade() {
+		return this.idade;
+	}
+
+	public void setIdade(final Integer idade) {
+		this.idade = idade;
 	}
 
 }

@@ -1,7 +1,7 @@
 package com.exemplo.praticas.ruins.coesao;
 
 /*
- * Neste caso o componente ClienteService apresenta baixa coesão.
+ * Neste exemplo o componente ClienteService apresenta baixa coesão.
  *
  * Ele tem várias responsabilidades, como:
  * - Validar dados
@@ -19,6 +19,10 @@ public class ClienteService {
 	private void validarDadosCliente(final Cliente cliente) {
 		if ((cliente.getNome() == null) || "".equals(cliente.getNome())) {
 			throw new IllegalArgumentException("Nome deve ser preenchido");
+		}
+
+		if (cliente.getIdade() < 18) {
+			throw new IllegalArgumentException("Cliente deve ter mais que 18 anos");
 		}
 	}
 
