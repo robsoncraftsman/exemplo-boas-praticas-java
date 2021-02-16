@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class PedidoMemoryRepository implements PedidoRepository {
 
-	private List<Pedido> pedidos = new ArrayList<>();
+	private final List<Pedido> pedidos = new ArrayList<>();
 
 	@Override
 	public void salvar(final Pedido pedido) {
