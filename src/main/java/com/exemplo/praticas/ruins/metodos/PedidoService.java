@@ -4,14 +4,11 @@ public class PedidoService {
 
 	/*
 	 * Várias condições aninhadas.
-	 * Muitos parâmetros.
-	 * Possui flags como parâmetros.
-	 * Realiza mais de uma ação: determina qual o desconto e aplica o desconto ao valor. 
+	 * O método tem mais de uma responsabilidade: determinar qual o desconto e aplicar o desconto ao valor.
 	 */
-	public Double calcularDesconto(final Double valor, final Integer quantidade, final Integer estoque, final boolean descontoPorEstoque, final boolean descontoPorQuantidade) {
+	public Double calcularDesconto(final Double valor, final Integer quantidade, final Integer estoque, final boolean descontoPorQuantidade, final boolean descontoPorEstoque) {
 		Double desconto = 0D;
 		if (descontoPorQuantidade) {
-
 			if (quantidade >= 100) {
 				desconto = 20D;
 			} else if (quantidade >= 50) {
@@ -22,7 +19,7 @@ public class PedidoService {
 		}
 
 		if (descontoPorEstoque && (estoque > 1000)) {
-			desconto = +5D;
+			desconto = desconto + 5D;
 		}
 
 		return valor * (1 + (desconto / 100));
