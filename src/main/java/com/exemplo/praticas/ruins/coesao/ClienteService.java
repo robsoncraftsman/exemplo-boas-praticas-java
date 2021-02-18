@@ -13,7 +13,7 @@ public class ClienteService {
 	public void salvar(final Cliente cliente) {
 		validarDadosCliente(cliente);
 		salvarNoBanco(cliente);
-		enviarEmailNovoCadastro(cliente);
+		enviarEmail(cliente);
 	}
 
 	private void validarDadosCliente(final Cliente cliente) {
@@ -30,7 +30,7 @@ public class ClienteService {
 		System.out.println(String.format("Cliente %s salvo com sucesso.", cliente.getId()));
 	}
 
-	private void enviarEmailNovoCadastro(final Cliente cliente) {
+	private void enviarEmail(final Cliente cliente) {
 		final var msg = String.format("Olá '%s'. É ótimo tê-lo como nosso cliente.", cliente.getNome());
 		System.out.println(String.format("Enviando e-mail para '%s' com texto '%s'", cliente.getEmail(), msg));
 	}

@@ -1,6 +1,6 @@
 package com.exemplo.praticas.boas.coesao;
 
-public class EmailClienteService {
+public class EmailClienteRecemCadastrado {
 
 	public void enviar(final Cliente cliente) {
 		final var msg = String.format("Olá '%s'. É ótimo tê-lo como nosso cliente.", cliente.getNome());

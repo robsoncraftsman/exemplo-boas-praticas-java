@@ -6,15 +6,16 @@ package com.exemplo.praticas.boas.coesao;
  */
 public class ClienteService {
 
-	private final ClienteValidator clienteValidor = new ClienteValidator();
+	private final CamposObrigatoriosClienteValidator camposObrigatoriosClienteValidator = new CamposObrigatoriosClienteValidator();
+	private final IdadeClienteValidator idadeClienteValidator = new IdadeClienteValidator();
 	private final ClienteRepository clienteRepository = new ClienteRepository();
-	private final EmailClienteService emailClienteService = new EmailClienteService();
+	private final EmailClienteRecemCadastrado emailClienteRecemCadastrado = new EmailClienteRecemCadastrado();
 
-	public void salvar(final Cliente cliente) {
-		this.clienteValidor.validarCamposObrigatorios(cliente);
-		this.clienteValidor.validarIdadeCliente(cliente);
-		this.clienteRepository.salvar(cliente);
-		this.emailClienteService.enviar(cliente);
+	public void inserir(final Cliente cliente) {
+		this.camposObrigatoriosClienteValidator.validar(cliente);
+		this.idadeClienteValidator.validar(cliente);
+		this.clienteRepository.inserir(cliente);
+		this.emailClienteRecemCadastrado.enviar(cliente);
 	}
 
 }
