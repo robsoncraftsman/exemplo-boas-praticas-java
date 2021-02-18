@@ -8,7 +8,7 @@ import java.util.Map;
  */
 public class DadosRepository {
 
-	public Map<String, Object> carregaDados() {
+	public Map<String, Object> carregarDados() {
 		final var dados = new HashMap<String, Object>();
 		dados.put("1", "João");
 		dados.put("2", "Maria");

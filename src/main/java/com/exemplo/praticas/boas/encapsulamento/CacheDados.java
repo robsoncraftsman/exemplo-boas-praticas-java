@@ -9,10 +9,10 @@ import java.util.Map;
  */
 public class CacheDados {
 
-	private Map<String, Object> cache;
+	private final Map<String, Object> cache;
 
 	public CacheDados(final DadosRepository dadosRepository) {
-		this.cache = dadosRepository.carregaDados();
+		this.cache = dadosRepository.carregarDados();
 	}
 
 	public Object getValue(final String key) {
