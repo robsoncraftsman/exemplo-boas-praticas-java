@@ -17,6 +17,7 @@ public class FileUtil {
 	 * Método dispara uma exceção específica em caso de erro.
 	 * Nenhuma exceção é ignorada.
 	 * Exceções são tratadas em pontos específicos e não de forma genérica.
+	 * Pilha da exceção original é sempre propagada dentro da exceção unchecked.
 	 */
 	public byte[] loadFile(final String fileName) {
 		final File fileToRead = new File(fileName);
