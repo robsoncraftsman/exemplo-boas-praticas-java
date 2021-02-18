@@ -7,7 +7,7 @@ package com.exemplo.praticas.boas.metodos;
  */
 public class PedidoService {
 
-	protected Double calculaDescontoPorQuantidade(final Integer quantidade) {
+	private Double calculaDescontoPorQuantidade(final Integer quantidade) {
 		if (quantidade >= 100) {
 			return 20D;
 		} else if (quantidade >= 50) {
@@ -19,7 +19,7 @@ public class PedidoService {
 		}
 	}
 
-	protected Double calculaDescontoPorEstoque(final Integer estoque) {
+	private Double calculaDescontoPorEstoque(final Integer estoque) {
 		if (estoque > 1000) {
 			return 5D;
 		} else {
@@ -27,12 +27,12 @@ public class PedidoService {
 		}
 	}
 
-	protected Double calculaDescontoSobreValor(final Double valor, final Double desconto) {
+	private Double calculaDescontoSobreValor(final Double valor, final Double desconto) {
 		return valor * (1 + (desconto / 100));
 	}
 
 	public Double calcularDesconto(final Double valor, final Integer quantidade, final Integer estoque, final boolean descontoPorQuantidade, final boolean descontoPorEstoque) {
-		Double desconto = 0D;
+		double desconto = 0;
 		if (descontoPorQuantidade) {
 			desconto = desconto + calculaDescontoPorQuantidade(quantidade);
 		}
